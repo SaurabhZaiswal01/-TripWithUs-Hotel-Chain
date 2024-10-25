@@ -19,7 +19,7 @@ app.get('/hotels/sort/pricing', (request, response) => {
 
   if (pricing == 'low-to-high') {
     sortedHotels.sort((a, b) => a.price - b.price);
-  } else if (pricing == 'high to low') {
+  } else if (pricing == 'high-to-low') {
     sortedHotels.sort((a, b) => b.price - a.price);
   }
   let result = sortedHotels;
@@ -34,7 +34,7 @@ app.get('/hotels/sort/rating', (request, response) => {
 
   if (rating == 'low-to-high') {
     sortedHotels.sort((a, b) => a.rating - b.rating);
-  } else if (rating == 'high to low') {
+  } else if (rating == 'high-to-low') {
     sortedHotels.sort((a, b) => b.rating - a.rating);
   }
   let result = sortedHotels;
